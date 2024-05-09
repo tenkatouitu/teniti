@@ -1,141 +1,145 @@
 .dotgothic16-regular {
-    font-family: "DotGothic16", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
-    background-color: #c6daf1;
-  }
+  background-color: #c6daf1;
+}
+
+#title {
+  font-family:'DotGothic16';
+  text-align: center;
+  font-size: 34px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   
-  #title {
-    font-family:'DotGothic16';
-    text-align: center;
-    font-size: 34px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-  }
-  label{
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .boardWrapper {
-    /* background-color: #b3eeb3; */
-    background-color: #f3eded;
-    padding: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    border: 1px solid black;
-    margin-bottom: 20px;
-  }
-  
-  section {
-    padding: 0px 10px;
-  }
-  
-  section .username {
-    color: green !important;
-    font-weight: 700;
-  }
-  
-  section .nameArea {
-    display: flex;
-    align-items: center;
-    margin-bottom: -14px;
-  }
-  
-  section .comment {
-    margin-top: 0;
-    margin-left: 20px;
-  }
-  
-  .success_message {
-    color: green;
-    padding-left: 10px;
-  }
-  
-  .error_message {
-    color: red;
-    padding-left: 10px;
-  }
-  
-  .formWrapper {
-    padding: 16px;
-    margin-left: 20px;
-  }
-  
-  .comment{
-    margin-top: 10px;
-    width: 500px;
-    height: 90px;
-  }
-  .gamingbackground {
-    /* 横長で虹色を作る */
-    background: linear-gradient(to right, Magenta, yellow, Cyan, Magenta) 0% center/200%;
-    animation: gamingbackground 2s linear infinite;
-  }
-  @keyframes gamingbackground {
-    /* backgroundを移動させる */
-    100% { background-position-x: 200%; }
-  }
-  .gaming {
-    /* アニメーションの長さ */
-    animation: gaming 2s linear infinite;
-  }
-  @keyframes gaming {
-    /* 色の指定 */
-    0% { background-color: Magenta; }
-    33% { background-color: yellow; }
-    66% { background-color: Cyan; }
-    100% { background-color: Magenta; }
-  }
-  /* 桜を表示するコンテナのスタイル */
+}
+label{
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.boardWrapper {
+  /* background-color: #b3eeb3; */
+  background-color: #f3eded;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 0px 10px;
+}
+
+section .username {
+  color: green !important;
+  font-weight: 700;
+}
+
+section .nameArea {
+  display: flex;
+  align-items: center;
+  margin-bottom: -14px;
+}
+
+section .comment {
+  margin-top: 0;
+  margin-left: 20px;
+}
+
+.success_message {
+  color: green;
+  padding-left: 10px;
+}
+
+.error_message {
+  color: red;
+  padding-left: 10px;
+}
+
+.formWrapper {
+  padding: 16px;
+  margin-left: 20px;
+}
+p.username{
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.comment{
+  margin-top: 10px;
+  width: 500px;
+  height: 90px;
+}
+.gamingbackground {
+  /* 横長で虹色を作る */
+  background: linear-gradient(to right, Magenta, yellow, Cyan, Magenta) 0% center/200%;
+  animation: gamingbackground 2s linear infinite;
+}
+@keyframes gamingbackground {
+  /* backgroundを移動させる */
+  100% { background-position-x: 200%; }
+}
+.gaming {
+  /* アニメーションの長さ */
+  animation: gaming 2s linear infinite;
+}
+@keyframes gaming {
+  /* 色の指定 */
+  0% { background-color: Magenta; }
+  33% { background-color: yellow; }
+  66% { background-color: Cyan; }
+  100% { background-color: Magenta; }
+}
+/* 桜を表示するコンテナのスタイル */
 .cherry-blossom-container {
-  position: relative;
-  height: 100vh; /* コンテナの高さ */
-  width: 100%; /* コンテナの横幅 */
-  overflow: hidden; /* コンテナからはみ出した要素を隠す */
+position: relative;
+height: 100%; /* コンテナの高さ */
+width: 100%; /* コンテナの横幅 */
+overflow: hidden; /* コンテナからはみ出した要素を隠す */
 }
 
 /* 桜の花びらのスタイル */
 .petal {
-  position: absolute;
-  /* 花びらの色 */
-  border-radius: 150% 0 150% 0;
-  animation: animate-petal 10s linear;
+position: absolute;
+/* 花びらの色 */
+border-radius: 150% 0 150% 0;
+animation: animate-petal 10s linear;
 }
 
 .petal::after {
-  content: "";
-  position: absolute;
-  top: -14%;
-  left: -10%;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #ffc0cb;
-  border-radius: 150% 0 150% 0;
-  transform: rotate(15deg);
+content: "";
+position: absolute;
+top: -14%;
+left: -10%;
+display: block;
+width: 100%;
+height: 100%;
+background-color: #ffc0cb;
+border-radius: 150% 0 150% 0;
+transform: rotate(15deg);
 }
 
 /* 花びらが降るアニメーション */
 @keyframes animate-petal {
-  0% {
-    top: 0;
-    opacity: 0;
-    transform: rotate(0deg);
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    top: 100vh;
-    transform: rotate(3000deg);
-  }
+0% {
+  top: 0;
+  opacity: 0;
+  transform: rotate(0deg);
+}
+10% {
+  opacity: 1;
+}
+90% {
+  opacity: 1;
+}
+100% {
+  opacity: 0;
+  top: 100vh;
+  transform: rotate(3000deg);
+}
 }
